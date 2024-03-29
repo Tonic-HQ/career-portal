@@ -9,32 +9,32 @@
     "rtf",
     "odt"
   ],
-  "companyName": "[ COMPANY NAME HERE ]",
+  "companyName": "IEM Energy Consultants",
   "companyLogoPath": "",
   "companyUrl": "",
   "careersUrl": "",
   "defaultLocale": "en-US",
   "supportedLocales": [
-      "en-US",
-      "en-GB",
-      "en",
-      "fr-FR",
-      "fr",
-      "es",
-      "de",
-      "it",
-      "nl",
-      "ru",
-      "zh-CN"
+    "en-US",
+    "en-GB",
+    "en",
+    "fr-FR",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "nl",
+    "ru",
+    "zh-CN"
   ],
   "minUploadSize": 4096,
   "maxRelatedJobs": 5,
   "maxUploadSize": 5242880,
   "service": {
     "batchSize": 500,
-    "corpToken": "[ CORP TOKEN HERE ]",
+    "corpToken": "71IFVD",
     "port": null,
-    "swimlane": "[ SWIMLANE HERE ]",
+    "swimlane": "42",
     "fields": [
       "id",
       "title",
@@ -64,9 +64,9 @@
     ]
   },
   "additionalJobCriteria": {
-    "field": "[ FILTER FIELD HERE ]",
+    "field": "correlatedCustomText2",
     "values": [
-      "[ FILTER VALUE HERE ]"
+      "IEM"
     ],
     "sort": "-dateLastPublished"
   },
@@ -79,9 +79,9 @@
     }
   },
   "eeoc": {
-    "genderRaceEthnicity": false,
-    "veteran": false,
-    "disability": false
+    "genderRaceEthnicity": true,
+    "veteran": true,
+    "disability": true
   },
   "privacyConsent": {
     "consentCheckbox": false,

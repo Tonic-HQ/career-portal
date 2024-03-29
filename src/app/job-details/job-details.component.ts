@@ -25,7 +25,7 @@ export class JobDetailsComponent implements OnInit {
   public relatedJobs: any;
   public showShareButtons: boolean = false;
   public alreadyApplied: boolean = false;
-  public showCategory: boolean  = SettingsService.settings.service.showCategory;
+  public showCategory: boolean = SettingsService.settings.service.showCategory;
   public isSafariAgent: boolean = false;
   private APPLIED_JOBS_KEY: string = 'APPLIED_JOBS_KEY';
 
@@ -51,7 +51,7 @@ export class JobDetailsComponent implements OnInit {
     }
     this.loading = true;
     this.id = this.route.snapshot.paramMap.get('id');
-    this.source = this.route.snapshot.queryParams.source;
+    this.source = "Website(IEM)";
     this.analytics.trackEvent(`Open Job: ${this.id}`);
     this.checkSessionStorage();
     this.setJob();
@@ -69,7 +69,7 @@ export class JobDetailsComponent implements OnInit {
 
   public getRelatedJobs(): any {
     if (this.job && this.job.publishedCategory) {
-      this.service.getjobs({ 'publishedCategory.id': [this.job.publishedCategory.id]}, {} , SettingsService.settings.service.batchSize).subscribe((res: any) => { this.relatedJobs = res.data; });
+      this.service.getjobs({ 'publishedCategory.id': [this.job.publishedCategory.id] }, {}, SettingsService.settings.service.batchSize).subscribe((res: any) => { this.relatedJobs = res.data; });
     }
   }
 
@@ -123,9 +123,9 @@ export class JobDetailsComponent implements OnInit {
       this.meta.updateTag({ name: 'titter:title', content: this.job.title });
       this.meta.updateTag({ name: 'og:image', content: SettingsService.settings.companyLogoPath });
       this.meta.updateTag({ name: 'og:url', content: `${SettingsService.urlRoot}${this.router.url}` });
-      this.meta.updateTag({ name: 'og:description', content: this.job.publicDescription});
-      this.meta.updateTag({ name: 'twitter:description', content: this.job.publicDescription});
-      this.meta.updateTag({ name: 'description', content: this.job.publicDescription});
+      this.meta.updateTag({ name: 'og:description', content: this.job.publicDescription });
+      this.meta.updateTag({ name: 'twitter:description', content: this.job.publicDescription });
+      this.meta.updateTag({ name: 'description', content: this.job.publicDescription });
       this.loading = false;
     } else {
       this.serverResponse.setNotFound();

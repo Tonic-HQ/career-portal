@@ -9,7 +9,7 @@
     "rtf",
     "odt"
   ],
-  "companyName": "[ COMPANY NAME HERE ]",
+  "companyName": "IEM Energy Consultants",
   "companyLogoPath": "",
   "companyUrl": "",
   "careersUrl": "",
@@ -27,51 +27,14 @@
     "ru",
     "zh-CN"
   ],
-  "languageDropdownOptions": {
-    "enabled": true,
-    "choices": [
-      {
-        "localeCode": "en",
-        "name": "English"
-      },
-      {
-        "localeCode": "fr",
-        "name": "French"
-      },
-      {
-        "localeCode": "es",
-        "name": "Spanish"
-      },
-      {
-        "localeCode": "de",
-        "name": "German"
-      },
-      {
-        "localeCode": "it",
-        "name": "Italian"
-      },
-      {
-        "localeCode": "nl",
-        "name": "Dutch"
-      },
-      {
-        "localeCode": "ru",
-        "name": "Russian"
-      },
-      {
-        "localeCode": "zh-CN",
-        "name": "Chinese"
-      }
-    ]
-  },
   "minUploadSize": 4096,
   "maxRelatedJobs": 5,
   "maxUploadSize": 5242880,
   "service": {
     "batchSize": 500,
-    "corpToken": "1VCNF4",
+    "corpToken": "71IFVD",
     "port": null,
-    "swimlane": "91",
+    "swimlane": "42",
     "fields": [
       "id",
       "title",
@@ -95,11 +58,16 @@
       }
     ],
     "showCategory": true,
-    "keywordSearchFields": ["publicDescription", "title"]
+    "keywordSearchFields": [
+      "publicDescription",
+      "title"
+    ]
   },
   "additionalJobCriteria": {
-    "field": "[ FILTER FIELD HERE ]",
-    "values": ["[ FILTER VALUE HERE ]"],
+    "field": "correlatedCustomText2",
+    "values": [
+      "IEM"
+    ],
     "sort": "-dateLastPublished"
   },
   "integrations": {
@@ -116,8 +84,8 @@
     "disability": true
   },
   "privacyConsent": {
-    "consentCheckbox": true,
-    "sidebarLink": true,
+    "consentCheckbox": false,
+    "sidebarLink": false,
     "privacyPolicyUrl": "/privacy"
   }
 }
