@@ -51,7 +51,7 @@ export class JobDetailsComponent implements OnInit {
     }
     this.loading = true;
     this.id = this.route.snapshot.paramMap.get('id');
-    this.source = "Website(IEM)";
+    this.source = "Website(CLS)";
     this.analytics.trackEvent(`Open Job: ${this.id}`);
     this.checkSessionStorage();
     this.setJob();

@@ -9,7 +9,7 @@
     "rtf",
     "odt"
   ],
-  "companyName": "IEM Energy Consultants",
+  "companyName": "Clover Leaf Solutions",
   "companyLogoPath": "",
   "companyUrl": "",
   "careersUrl": "",
@@ -66,7 +66,7 @@
   "additionalJobCriteria": {
     "field": "correlatedCustomText2",
     "values": [
-      "IEM"
+      "Clover Leaf"
     ],
     "sort": "-dateLastPublished"
   },
