@@ -51,7 +51,7 @@ export class JobDetailsComponent implements OnInit {
     }
     this.loading = true;
     this.id = this.route.snapshot.paramMap.get('id');
-    this.source = "Website(RYS)";
+    this.source = "Job Board (RYS)";
     this.analytics.trackEvent(`Open Job: ${this.id}`);
     this.checkSessionStorage();
     this.setJob();
